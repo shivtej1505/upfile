@@ -1,13 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Button } from 'semantic-ui-react'
+import { Button, Container, Header } from 'semantic-ui-react'
 
 function Uploader() {
   return(
-    <div>
-      Uploader
-      <Button>Click Here</Button>
-    </div>
+    <Container textAlign='center'>
+      <Header as='h1'>Upfile</Header>
+      <Button size='large' onClick={() => console.log("file uploading")} primary>Upload</Button>
+    </Container>
   )
 }
 
